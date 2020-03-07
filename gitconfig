@@ -1,0 +1,17 @@
+#
+# ~/.gitconfig
+#
+
+# Basic user info
+[user]
+name = Conor McGrory
+email = cpmcgrory@gmail.com
+
+# Global excludes
+[core]
+	excludesfile = /home/cmcgrory/.gitignore_global
+
+# Strip output from Jupyter notebooks when committing
+[filter "nbstripout"]
+	clean = nbstripout
+	smudge = cat
